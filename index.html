@@ -1,269 +1,176 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cama-box | Camas en Lima</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camas Box - Lima</title>
 
-<style>
-*{
-  box-sizing:border-box;
-}
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-body{
-  margin:0;
-  font-family:Arial,sans-serif;
-  background:#f5f5f5;
-  color:#222;
-}
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
 
-header{
-  background:#111;
-  color:white;
-  text-align:center;
-  padding:28px 15px;
-}
+    header {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
 
-header h1{
-  margin:0;
-  font-size:36px;
-}
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
 
-header p{
-  margin:10px 0 0;
-  font-size:18px;
-}
+    header p {
+      margin: 8px 0 0;
+      font-size: 17px;
+    }
 
-.hero{
-  background:white;
-  text-align:center;
-  padding:35px 20px;
-}
+    .contacto {
+      background: #25D366;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      font-size: 18px;
+      font-weight: bold;
+    }
 
-.hero h2{
-  font-size:30px;
-  margin:0 0 10px;
-}
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
 
-.hero p{
-  font-size:18px;
-}
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
 
-.oferta{
-  display:inline-block;
-  background:#d71920;
-  color:white;
-  padding:14px 25px;
-  border-radius:8px;
-  font-size:24px;
-  font-weight:bold;
-  margin-top:10px;
-}
+    .foto img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
 
-.productos{
-  max-width:1100px;
-  margin:auto;
-  padding:30px 15px;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:20px;
-}
+    .info {
+      padding: 18px;
+      text-align: center;
+    }
 
-.card{
-  background:white;
-  border-radius:12px;
-  overflow:hidden;
-  box-shadow:0 3px 12px rgba(0,0,0,.12);
-  text-align:center;
-  padding-bottom:20px;
-}
+    .info h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+    }
 
-.foto{
-  height:210px;
-  background:#ddd;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#777;
-  font-size:18px;
-}
+    .precio {
+      font-size: 26px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
 
-.card h3{
-  font-size:22px;
-  margin:18px 10px 8px;
-}
+    .boton {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
 
-.card p{
-  margin:8px 15px;
-  line-height:1.5;
-}
-
-.precio{
-  font-size:26px;
-  font-weight:bold;
-  color:#d71920;
-  margin:15px;
-}
-
-.boton{
-  display:inline-block;
-  background:#25D366;
-  color:white;
-  text-decoration:none;
-  padding:13px 22px;
-  border-radius:8px;
-  font-weight:bold;
-}
-
-.info{
-  background:#111;
-  color:white;
-  text-align:center;
-  padding:35px 20px;
-}
-
-.info h2{
-  margin-top:0;
-}
-
-.info p{
-  font-size:18px;
-  line-height:1.6;
-}
-
-footer{
-  background:#222;
-  color:#ccc;
-  text-align:center;
-  padding:20px;
-  font-size:14px;
-}
-
-@media(max-width:600px){
-  header h1{
-    font-size:29px;
-  }
-
-  .hero h2{
-    font-size:25px;
-  }
-}
-</style>
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <h1>CAMA-BOX</h1>
-  <p>Camas, cabeceras y colchones en Lima</p>
-</header>
+  <header>
+    <h1>CAMAS BOX</h1>
+    <p>Camas, tarimas, cabeceras y colchones</p>
+  </header>
 
-<section class="hero">
-  <h2>Renueva tu dormitorio</h2>
-  <p>Encuentra tu cama box y cabecera a un precio accesible.</p>
-
-  <div class="oferta">
-    OFERTAS DESDE S/260
+  <div class="contacto">
+    📲 Pedidos por WhatsApp: 970878163
   </div>
-</section>
 
-<section class="productos">
+  <section class="productos">
 
-  <div class="card">
-    <div class="foto">
+    <div class="card">
       <div class="foto">
-  <img src="Messenger_creation_202F033C-9931-4EDC-B60A-AB43A153265F.png" alt="Cama Box">
-  <img src="Messenger_creation_34C4C838-09EA-4092-9960-CDDEF4193C15.png" alt="Cama Box">
-  <img src="Messenger_creation_B21B5A4D-7D22-4CE1-A398-5409DC803FCD.png" alt="Cama Box">
-  <img src="Messenger_creation_C2786D2A-830A-4A74-8DD6-449CD71A6701.png" alt="Cama Box">
-</div>
-  
+        <img src="Messenger_creation_202F033C-9931-4EDC-B60A-AB43A153265F.png" alt="Cama Box">
+      </div>
+
+      <div class="info">
+        <h2>Cama Box</h2>
+        <p>Cabecera lineal y colchón.</p>
+        <div class="precio">Desde S/ 260</div>
+        <a class="boton" href="https://wa.me/51970878163">Consultar por WhatsApp</a>
+      </div>
     </div>
 
-    <h3>Cama Box</h3>
+    <div class="card">
+      <div class="foto">
+        <img src="Messenger_creation_34C4C838-09EA-4092-9960-CDDEF4193C15.png" alt="Cama Box">
+      </div>
 
-    <p>
-      Modelos básicos y cómodos para tu dormitorio.
-    </p>
-
-    <div class="precio">
-      Desde S/260
+      <div class="info">
+        <h2>Cama Box</h2>
+        <p>Modelos disponibles.</p>
+        <div class="precio">Desde S/ 260</div>
+        <a class="boton" href="https://wa.me/51970878163">Consultar por WhatsApp</a>
+      </div>
     </div>
 
-    <a class="boton"
-       href="https://wa.me/51970878163"
-       Consultar por WhatsApp  970878163
-    </a>
-  </div>
+    <div class="card">
+      <div class="foto">
+        <img src="Messenger_creation_B21B5A4D-7D22-4CE1-A398-5409DC803FCD.png" alt="Cama Box">
+      </div>
 
-
-  <div class="card">
-    <div class="foto">
-      📸 Aquí irá la foto de tu cabecera
+      <div class="info">
+        <h2>Cama Box</h2>
+        <p>Consulta nuestras medidas.</p>
+        <div class="precio">Desde S/ 260</div>
+        <a class="boton" href="https://wa.me/51970878163">Consultar por WhatsApp</a>
+      </div>
     </div>
 
-    <h3>Cabeceras Lineales</h3>
+    <div class="card">
+      <div class="foto">
+        <img src="Messenger_creation_C2786D2A-830A-4A74-8DD6-449CD71A6701.png" alt="Cama Box">
+      </div>
 
-    <p>
-      Diseños sencillos y modernos para complementar tu cama.
-    </p>
-
-    <div class="precio">
-      Consulta precio
+      <div class="info">
+        <h2>Cama Box</h2>
+        <p>Entrega y atención en Lima.</p>
+        <div class="precio">Desde S/ 260</div>
+        <a class="boton" href="https://wa.me/51970878163">Consultar por WhatsApp</a>
+      </div>
     </div>
 
-    <a class="boton"
-       "
-       href="https://wa.me/51970878163
-       Consultar por WhatsApp 970878163
-    </a>
-  </div>
+  </section>
 
-
-  <div class="card">
-    <div class="foto">
-      📸 Aquí irá la foto de tu colchón
-    </div>
-
-    <h3>Colchones</h3>
-
-    <p>
-      Opciones de colchones Imperio y Rossetti.
-    </p>
-
-    <div class="precio">
-      Consulta precio
-    </div>
-
-    <a class="boton"
-      "
-       href="https://wa.me/51970878163
-       Consultar por WhatsApp 970878163
-    </a>
-  </div>
-
-</section>
-
-<section class="info">
-  <h2>¿Por qué comprar con nosotros?</h2>
-
-  <p>
-    🚚 Delivery en Lima<br>
-    💵 Pago contra entrega<br>
-    🛏️ Camas y colchones<br>
-    📲 Atención por WhatsApp
-  </p>
-
-  <a class="boton"
-     "
-       href="https://wa.me/51970878163
-     HABLAR POR WHATSAPP 970878163
-  </a>
-</section>
-
-<footer>
-  © 2026 Cama-box · Camas, cabeceras y colchones en Lima
-</footer>
+  <footer>
+    © 2026 Camas Box - Lima
+  </footer>
 
 </body>
 </html>
