@@ -6,60 +6,147 @@
 <title>Cama-box | Camas en Lima</title>
 
 <style>
+*{
+  box-sizing:border-box;
+}
+
 body{
   margin:0;
   font-family:Arial,sans-serif;
   background:#f5f5f5;
   color:#222;
 }
+
 header{
   background:#111;
   color:white;
   text-align:center;
-  padding:30px 15px;
+  padding:28px 15px;
 }
+
 header h1{
   margin:0;
   font-size:36px;
 }
+
 header p{
+  margin:10px 0 0;
   font-size:18px;
 }
-.contenedor{
-  max-width:900px;
-  margin:auto;
-  padding:25px 15px;
-}
-.oferta{
+
+.hero{
   background:white;
-  border-radius:15px;
-  padding:25px;
-  margin-bottom:20px;
-  box-shadow:0 3px 12px #ccc;
   text-align:center;
+  padding:35px 20px;
 }
-.oferta h2{
-  margin-top:0;
-}
-.precio{
+
+.hero h2{
   font-size:30px;
+  margin:0 0 10px;
+}
+
+.hero p{
+  font-size:18px;
+}
+
+.oferta{
+  display:inline-block;
+  background:#d71920;
+  color:white;
+  padding:14px 25px;
+  border-radius:8px;
+  font-size:24px;
   font-weight:bold;
+  margin-top:10px;
+}
+
+.productos{
+  max-width:1100px;
+  margin:auto;
+  padding:30px 15px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 3px 12px rgba(0,0,0,.12);
+  text-align:center;
+  padding-bottom:20px;
+}
+
+.foto{
+  height:210px;
+  background:#ddd;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#777;
+  font-size:18px;
+}
+
+.card h3{
+  font-size:22px;
+  margin:18px 10px 8px;
+}
+
+.card p{
+  margin:8px 15px;
+  line-height:1.5;
+}
+
+.precio{
+  font-size:26px;
+  font-weight:bold;
+  color:#d71920;
   margin:15px;
 }
+
 .boton{
   display:inline-block;
   background:#25D366;
   color:white;
-  padding:14px 25px;
-  border-radius:10px;
   text-decoration:none;
+  padding:13px 22px;
+  border-radius:8px;
   font-weight:bold;
 }
-footer{
-  text-align:center;
-  padding:25px;
+
+.info{
   background:#111;
   color:white;
+  text-align:center;
+  padding:35px 20px;
+}
+
+.info h2{
+  margin-top:0;
+}
+
+.info p{
+  font-size:18px;
+  line-height:1.6;
+}
+
+footer{
+  background:#222;
+  color:#ccc;
+  text-align:center;
+  padding:20px;
+  font-size:14px;
+}
+
+@media(max-width:600px){
+  header h1{
+    font-size:29px;
+  }
+
+  .hero h2{
+    font-size:25px;
+  }
 }
 </style>
 </head>
@@ -67,32 +154,106 @@ footer{
 <body>
 
 <header>
-<h1>🛏️ Cama-box</h1>
-<p>Camas, cabeceras y colchones en Lima</p>
+  <h1>CAMA-BOX</h1>
+  <p>Camas, cabeceras y colchones en Lima</p>
 </header>
 
-<div class="contenedor">
+<section class="hero">
+  <h2>Renueva tu dormitorio</h2>
+  <p>Encuentra tu cama box y cabecera a un precio accesible.</p>
 
-<div class="oferta">
-<h2>🔥 Camas en oferta</h2>
-<p>Calidad y comodidad para tu hogar.</p>
-<p>Tenemos diferentes tamaños y modelos.</p>
+  <div class="oferta">
+    OFERTAS DESDE S/260
+  </div>
+</section>
 
-<div class="precio">Desde S/ 000</div>
+<section class="productos">
 
-<a class="boton" href="#">📲 Consultar por WhatsApp</a>
-</div>
+  <div class="card">
+    <div class="foto">
+      📸 Aquí irá la foto de tu cama
+    </div>
 
-<div class="oferta">
-<h2>🚚 Delivery en Lima</h2>
-<p>Consulta disponibilidad, tamaños y precios.</p>
-</div>
+    <h3>Cama Box</h3>
 
-</div>
+    <p>
+      Modelos básicos y cómodos para tu dormitorio.
+    </p>
+
+    <div class="precio">
+      Desde S/260
+    </div>
+
+    <a class="boton"
+       href="https://wa.me/51999999999?text=Hola,%20quiero%20consultar%20por%20una%20cama%20box">
+       Consultar por WhatsApp
+    </a>
+  </div>
+
+
+  <div class="card">
+    <div class="foto">
+      📸 Aquí irá la foto de tu cabecera
+    </div>
+
+    <h3>Cabeceras Lineales</h3>
+
+    <p>
+      Diseños sencillos y modernos para complementar tu cama.
+    </p>
+
+    <div class="precio">
+      Consulta precio
+    </div>
+
+    <a class="boton"
+       href="https://wa.me/51999999999?text=Hola,%20quiero%20consultar%20por%20una%20cabecera">
+       Consultar por WhatsApp
+    </a>
+  </div>
+
+
+  <div class="card">
+    <div class="foto">
+      📸 Aquí irá la foto de tu colchón
+    </div>
+
+    <h3>Colchones</h3>
+
+    <p>
+      Opciones de colchones Imperio y Rossetti.
+    </p>
+
+    <div class="precio">
+      Consulta precio
+    </div>
+
+    <a class="boton"
+       href="https://wa.me/51999999999?text=Hola,%20quiero%20consultar%20por%20un%20colchón">
+       Consultar por WhatsApp
+    </a>
+  </div>
+
+</section>
+
+<section class="info">
+  <h2>¿Por qué comprar con nosotros?</h2>
+
+  <p>
+    🚚 Delivery en Lima<br>
+    💵 Pago contra entrega<br>
+    🛏️ Camas y colchones<br>
+    📲 Atención por WhatsApp
+  </p>
+
+  <a class="boton"
+     href="https://wa.me/51999999999?text=Hola,%20quiero%20información%20sobre%20las%20camas">
+     HABLAR POR WHATSAPP
+  </a>
+</section>
 
 <footer>
-<p>© 2026 Cama-box</p>
-<p>Ventas en Lima</p>
+  © 2026 Cama-box · Camas, cabeceras y colchones en Lima
 </footer>
 
 </body>
